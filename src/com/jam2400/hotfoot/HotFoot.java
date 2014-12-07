@@ -6,6 +6,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.jam2400.hotfoot.threads.Countdown;
+
 public class HotFoot extends JavaPlugin {
 	
 	public void registerListeners(){
@@ -16,11 +18,20 @@ public class HotFoot extends JavaPlugin {
 	public void onEnable(){
 		registerListeners();
 		Bukkit.getServer().getLogger().info("HotFoot enabled.");
+		new Thread(new Countdown()).start();
 	}
 	
 	@Override
 	public void onDisable(){
 		
+	}
+	
+	public static void start(){
+		// TODO start method
+	}
+	
+	public static void stop() {
+		// TODO stop method
 	}
 	
 	@Override
