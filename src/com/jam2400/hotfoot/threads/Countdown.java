@@ -3,7 +3,7 @@ package com.jam2400.hotfoot.threads;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
-import com.jam2400.hotfoot.HotFoot;
+import com.jam2400.hotfoot.handlers.Game;
 import com.jam2400.hotfoot.utils.ChatUtils;
 import com.jam2400.hotfoot.utils.GameState;
 import com.jam2400.hotfoot.utils.PlayerUtils;
@@ -15,23 +15,25 @@ private static int timeUntilStart;
     public void run() {
         while (true) {
             if (GameState.isState(GameState.IN_LOBBY)) {
-                if (HotFoot.canStart() == true) {
+            
+                if (Game.canStart() == true) {
                     ChatUtils.broadcast("Minimum players reached! Countdown starting!");
-                    timeUntilStart = 60;
+                    timeUntilStart = 20;
                     for (; timeUntilStart >= 0; timeUntilStart--) {
                         
                     	PlayerUtils.setAllLevel(timeUntilStart);
-                        
-                        if(HotFoot.canStart() == false){
+                    	
+                    	if(!Game.canStart()){
                             ChatUtils.broadcast("The countdown stopped because there weren't enough players.");
                             break;
                         }
+                        
                         if (timeUntilStart == 0) {
-                            HotFoot.start();
+                            Game.start();
+                            GameState.setState(GameState.IN_GAME);
                             break;
                         }
-
-                        if (timeUntilStart % 10 == 0 || timeUntilStart <= 5) {
+                        if (timeUntilStart % 10 == 0 || timeUntilStart < 10) {
                             ChatUtils.broadcast("There are " + ChatColor.YELLOW + timeUntilStart + ChatColor.WHITE + 
                             		" seconds until the game starts!");
                         }

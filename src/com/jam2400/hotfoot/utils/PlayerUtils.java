@@ -14,9 +14,13 @@ public class PlayerUtils {
 		}
 	}
 	
-	public static void tpToSpawn(){
-		for (Player p : Bukkit.getOnlinePlayers()){
-			p.teleport(spawn);
+	public static void playAllClick(){
+		for(Player p : Bukkit.getOnlinePlayers()){
+			// TODO play click sound
 		}
+	}
+	
+	public static void tpToSpawn(Player p){
+			p.teleport(spawn);
 	}
 }
