@@ -12,6 +12,6 @@ public class ChatUtils {
 	}
 	
 	private static String tag() {
-		return YELLOW + "[" + RED + "HotFoot" + YELLOW + "]" + WHITE;
+		return YELLOW + "[" + RED + "HotFoot" + YELLOW + "]" + WHITE + " ";
 	}
 }

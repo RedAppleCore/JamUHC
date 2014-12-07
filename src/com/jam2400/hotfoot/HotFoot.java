@@ -7,6 +7,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.jam2400.hotfoot.threads.Countdown;
+import com.jam2400.hotfoot.utils.GameState;
 
 public class HotFoot extends JavaPlugin {
 	
@@ -18,6 +19,7 @@ public class HotFoot extends JavaPlugin {
 	public void onEnable(){
 		registerListeners();
 		Bukkit.getServer().getLogger().info("HotFoot enabled.");
+		GameState.setState(GameState.IN_LOBBY);
 		new Thread(new Countdown()).start();
 	}
 	
@@ -38,4 +40,8 @@ public class HotFoot extends JavaPlugin {
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		return false;
 	}
+	public static boolean canStart() {
+		return true;
+	}
+	
 }
