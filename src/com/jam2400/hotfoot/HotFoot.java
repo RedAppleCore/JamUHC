@@ -1,5 +1,6 @@
 package com.jam2400.hotfoot;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginManager;
@@ -13,7 +14,8 @@ public class HotFoot extends JavaPlugin {
 	}
 	@Override
 	public void onEnable(){
-		
+		registerListeners();
+		Bukkit.getServer().getLogger().info("HotFoot enabled.");
 	}
 	
 	@Override
