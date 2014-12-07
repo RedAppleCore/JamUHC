@@ -7,6 +7,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.jam2400.hotfoot.threads.Countdown;
+import com.jam2400.hotfoot.utils.ChatUtils;
 import com.jam2400.hotfoot.utils.GameState;
 
 public class HotFoot extends JavaPlugin {
@@ -29,7 +30,11 @@ public class HotFoot extends JavaPlugin {
 	}
 	
 	public static void start(){
-		// TODO start method
+		ChatUtils.broadcast("The game is about to start!");
+		// TODO teleport to arena
+		ChatUtils.broadcast("As you run around on the sand, the supporting blocks" +
+				" will dissapear and you shall meet a perilous demise!");
+		ChatUtils.broadcast("Good luck players! The final survivor shall be the chosen winner!");
 	}
 	
 	public static void stop() {
@@ -41,7 +46,12 @@ public class HotFoot extends JavaPlugin {
 		return false;
 	}
 	public static boolean canStart() {
-		return true;
+		if (Bukkit.getOnlinePlayers().length >= 1){
+			return true;
+		} else {
+			return false;
+		}
+		
 	}
 	
 }
