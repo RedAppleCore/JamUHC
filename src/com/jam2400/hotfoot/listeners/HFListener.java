@@ -2,12 +2,12 @@ package com.jam2400.hotfoot.listeners;
 
 import org.bukkit.event.Listener;
 
-import com.jam2400.hotfoot.HotFoot;
+import com.jam2400.hotfoot.JamUHC;
 
 public class HFListener implements Listener{
-	HotFoot pl;
+	JamUHC pl;
 	
-	public HFListener(HotFoot pl){
+	public HFListener(JamUHC pl){
 		this.pl = pl;
 	}
 }

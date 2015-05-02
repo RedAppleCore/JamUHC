@@ -6,14 +6,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import com.jam2400.hotfoot.HotFoot;
+import com.jam2400.hotfoot.JamUHC;
 import com.jam2400.hotfoot.handlers.Game;
 import com.jam2400.hotfoot.listeners.HFListener;
 import com.jam2400.hotfoot.utils.ChatUtils;
 
 public class PlayerJoin extends HFListener {
 
-	public PlayerJoin(HotFoot pl) {
+	public PlayerJoin(JamUHC pl) {
 		super(pl);
 	}
 	
@@ -23,7 +23,7 @@ public class PlayerJoin extends HFListener {
 		Game.setCanStart(true);
 		
 		e.setJoinMessage(null);
-		ChatUtils.broadcast(ChatColor.YELLOW + e.getPlayer().getName() + ChatColor.GOLD + " joined" );
+		ChatUtils.broadcast(ChatColor.YELLOW + e.getPlayer().getName() + ChatColor.GOLD + " joined." );
 		
 		p.setGameMode(GameMode.ADVENTURE);
 		if(p.isOp()){
