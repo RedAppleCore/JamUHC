@@ -62,7 +62,7 @@ public class Teams {
 	 
 	 public static void onTeamChange(Player p) {
 		 String team = getBoard().getPlayerTeam(p).getDisplayName();
-		 ChatUtils.broadcast(p.getDisplayName() + " is now on the " + team + " team.");
+		 ChatUtils.broadcast(p.getDisplayName() + " is now on the " + team + ChatColor.RESET  + " team.");
 		 
 		 if (getBoard().getPlayerTeam(p).getName() == "spectator") {
 			 p.setGameMode(GameMode.SPECTATOR);
