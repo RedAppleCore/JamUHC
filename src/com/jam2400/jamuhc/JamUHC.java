@@ -1,4 +1,4 @@
-package com.jam2400.hotfoot;
+package com.jam2400.jamuhc;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -6,10 +6,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.jam2400.hotfoot.listeners.player.PlayerJoin;
-import com.jam2400.hotfoot.listeners.player.PlayerMove;
-import com.jam2400.hotfoot.threads.Countdown;
-import com.jam2400.hotfoot.utils.GameState;
+import com.jam2400.jamuhc.listeners.player.PlayerJoin;
+import com.jam2400.jamuhc.listeners.player.PlayerMove;
+import com.jam2400.jamuhc.threads.Countdown;
+import com.jam2400.jamuhc.utils.GameState;
 
 public class JamUHC extends JavaPlugin {
 	

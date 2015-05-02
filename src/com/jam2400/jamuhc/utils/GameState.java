@@ -1,4 +1,4 @@
-package com.jam2400.hotfoot.utils;
+package com.jam2400.jamuhc.utils;
 
 public enum GameState {
 	IN_LOBBY(true), IN_GAME(false), POST_GAME(false), RESETTING(false);

@@ -1,12 +1,12 @@
-package com.jam2400.hotfoot.threads;
+package com.jam2400.jamuhc.threads;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
-import com.jam2400.hotfoot.handlers.Game;
-import com.jam2400.hotfoot.utils.ChatUtils;
-import com.jam2400.hotfoot.utils.GameState;
-import com.jam2400.hotfoot.utils.PlayerUtils;
+import com.jam2400.jamuhc.handlers.Game;
+import com.jam2400.jamuhc.utils.ChatUtils;
+import com.jam2400.jamuhc.utils.GameState;
+import com.jam2400.jamuhc.utils.PlayerUtils;
 
 public class Countdown implements Runnable {
 private static int timeUntilStart;

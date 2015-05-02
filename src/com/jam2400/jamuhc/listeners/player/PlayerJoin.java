@@ -1,4 +1,4 @@
-package com.jam2400.hotfoot.listeners.player;
+package com.jam2400.jamuhc.listeners.player;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -6,12 +6,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import com.jam2400.hotfoot.JamUHC;
-import com.jam2400.hotfoot.handlers.Game;
-import com.jam2400.hotfoot.listeners.HFListener;
-import com.jam2400.hotfoot.utils.ChatUtils;
+import com.jam2400.jamuhc.JamUHC;
+import com.jam2400.jamuhc.handlers.Game;
+import com.jam2400.jamuhc.listeners.UHCListener;
+import com.jam2400.jamuhc.utils.ChatUtils;
 
-public class PlayerJoin extends HFListener {
+public class PlayerJoin extends UHCListener {
 
 	public PlayerJoin(JamUHC pl) {
 		super(pl);

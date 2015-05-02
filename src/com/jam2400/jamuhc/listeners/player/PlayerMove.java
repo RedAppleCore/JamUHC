@@ -1,4 +1,4 @@
-package com.jam2400.hotfoot.listeners.player;
+package com.jam2400.jamuhc.listeners.player;
 
 import java.util.HashMap;
 
@@ -8,11 +8,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerMoveEvent;
 
-import com.jam2400.hotfoot.JamUHC;
-import com.jam2400.hotfoot.listeners.HFListener;
-import com.jam2400.hotfoot.utils.GameState;
+import com.jam2400.jamuhc.JamUHC;
+import com.jam2400.jamuhc.listeners.UHCListener;
+import com.jam2400.jamuhc.utils.GameState;
 
-public class PlayerMove extends HFListener {
+public class PlayerMove extends UHCListener {
 
 	public PlayerMove(JamUHC pl) {
 		super(pl);

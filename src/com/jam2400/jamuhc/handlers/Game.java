@@ -1,12 +1,12 @@
-package com.jam2400.hotfoot.handlers;
+package com.jam2400.jamuhc.handlers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 
-import com.jam2400.hotfoot.utils.ChatUtils;
-import com.jam2400.hotfoot.utils.GameState;
+import com.jam2400.jamuhc.utils.ChatUtils;
+import com.jam2400.jamuhc.utils.GameState;
 
 public class Game {
 	

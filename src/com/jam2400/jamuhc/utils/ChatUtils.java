@@ -1,4 +1,4 @@
-package com.jam2400.hotfoot.utils;
+package com.jam2400.jamuhc.utils;
 
 import static org.bukkit.ChatColor.*;
 
