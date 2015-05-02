@@ -1,3 +1,10 @@
 name: JamUHC
 version: 1.0
 main: com.jam2400.jamuhc.JamUHC
+
+commands:
+   team:
+      description: Use this to join a team.
+      usage: /<command> [team]
+      permission: <plugin name>.team
+      permission-message: You don't have <permission>

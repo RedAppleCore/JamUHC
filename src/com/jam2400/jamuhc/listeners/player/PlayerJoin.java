@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import com.jam2400.jamuhc.JamUHC;
 import com.jam2400.jamuhc.handlers.Game;
+import com.jam2400.jamuhc.handlers.Teams;
 import com.jam2400.jamuhc.listeners.UHCListener;
 import com.jam2400.jamuhc.utils.ChatUtils;
 
@@ -30,6 +31,7 @@ public class PlayerJoin extends UHCListener {
 			p.setAllowFlight(true);
 			p.setFlying(true);
 		}
+		Teams.setSpectator(p);
 		
 	}
 }

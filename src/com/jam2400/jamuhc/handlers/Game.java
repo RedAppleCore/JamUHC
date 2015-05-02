@@ -22,17 +22,13 @@ public class Game {
 	}
 	
 	public static void start(){
-		ChatUtils.broadcast("The game is about to start!");
-		// TODO teleport to arena
-		ChatUtils.broadcast(ChatColor.GOLD + "As you run around on the sand, the supporting blocks" +
-				" will dissapear and you shall meet a perilous demise!");
-		ChatUtils.broadcast(ChatColor.AQUA + "Good luck players! The final survivor shall be the chosen winner!");
+		ChatUtils.broadcast(ChatColor.GOLD + "The game is starting, good luck teams!");
 		
 		for (Player p : Bukkit.getOnlinePlayers()){
 			p.setAllowFlight(false);
 			p.setFlying(false);
 			
-			p.setGameMode(GameMode.ADVENTURE);
+			p.setGameMode(GameMode.SURVIVAL);
 		}
 		GameState.setState(GameState.IN_GAME);
 	}
